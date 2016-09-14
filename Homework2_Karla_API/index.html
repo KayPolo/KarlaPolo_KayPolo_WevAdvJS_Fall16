@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Advanced JS: Fall 2016</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+<!-- scripts for the map (this is a disaster, it is searching for this links in internet instead of in my computer)-->
+ <script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​common.js">​</script>
+​<script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​map.js">​</script>​
+<script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​util.js">​</script>​
+<script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​controls.js">​</script>​
+<script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​places_impl.js">​</script>​
+<script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​onion.js">​</script>​
+<script type=​"text/​javascript" charset=​"UTF-8" src=​"https:​/​/​maps.googleapis.com/​maps-api-v3/​api/​js/​26/​2/​stats.js">​</script>​
+</head>
+<body>
+
+
+<!-- here start the code -->
+
+    <div class="container" ng-app="myApp" ng-controller="newPlaceCtrl">
+      <div id= "title">MAP</div>
+      <div id="search">
+        <input id="search-box" type="text" placeholder="Location"/>
+        <button id="search-button">SEARCH</button>
+        
+      </div>
+      <div id="map"></div>
+      </div>
+    </div>
+
+<!-- 	here ends the code -->
+
+	<script type="text/javascript" src="js/jquery-min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+  <script src=​"/​/​ajax.googleapis.com/​ajax/​libs/​angularjs/​1.2.23/​angular.min.js">​</script>​<script src=​"https:​/​/​maps.googleapis.com/​maps/​api/​js?​key=AIzaSyA842Ac1CrVW7C4pOpI7vX4A9HZVgUy2js">​</script>​
+</html>
