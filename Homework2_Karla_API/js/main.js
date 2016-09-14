@@ -1,39 +1,20 @@
-// Inicial template used from class exercise
+// this code has been based on the class example layout 
+// and a code by  Marc Malignan
+
 var app = app || {};
 
+app.main = (function() {
 
-app.main = (function(){
-
-  console.log('Loading app.');
-
-
-  var attachEvents = function(){
-
-    console.log('Initializing app.');
-
-    
-    $('#search-button').off('click').on('click', function(){
-      loadData($('#search-box').val());
-    });
-
-    $('#search-box').keypress(function(e) {
-      if (e.keyCode == 13) {
-        loadData($('#search-box').val());
-      }
-    });
-  };
-
-
-// Code modified from codepen (AnguleJS + googleMAPS)
 
 var app = angular.module('myApp', []);
+
 app.service('Map', function($q) {
     
     this.init = function() {
         var options = {
             center: new google.maps.LatLng(40.7127837, -74.00594130000002),
             zoom: 13,
-            // disableDefaultUI: true    
+            disableDefaultUI: true    
         }
         this.map = new google.maps.Map(
             document.getElementById("map"), options
@@ -47,7 +28,7 @@ app.service('Map', function($q) {
             if (status == 'OK') {
                 d.resolve(results[0]);
             }
-            else d.reject(status);
+
         });
         return d.promise;
     }
@@ -85,25 +66,12 @@ app.controller('newPlaceCtrl', function($scope, Map) {
         );
     }
     
-    $scope.send = function() {
-        alert($scope.place.name + ' : ' + $scope.place.lat + ', ' + $scope.place.lng);    
-    }
     
     Map.init();
 });
 
+    return {
+        init: init
+    };
 
-
-  // // 1.
-  // var init = function(){
-  //   console.log('Initializing app.');
-  //   attachEvents();
-  // };
-
-  return {
-    init: init
-  };
 })();
-
-/* Wait for all elements on the page to load */
-window.addEventListener('DOMContentLoaded', app.main.init);
