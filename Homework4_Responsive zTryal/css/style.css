@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+}
+
+body{
+	position: absolute;
+	
+}
+
+/*background settings index page*/
+#backindex{
+	position: relative;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: -2;
+	
+}
+
+/*contact background*/
+#backcontact{
+	position: relative;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+}
+
+/*language buttons*/
+.language{
+	position: fixed;
+	float: right;
+	margin-top: 3%;
+	margin-left: 90%;
+	z-index: 1;
+}
+
+#english{
+	cursor: pointer;
+	width: 50px;
+	height: auto;
+	display: inline-block;
+	
+
+}
+
+#spanish{
+	cursor: pointer;
+	width: 50px;
+	height: auto;
+	display: inline-block;
+
+}
+
+#newmenu{
+	position: fixed;
+	float: left;
+	margin-top: 3%;
+	margin-left: 5%;
+	z-index: 1;
+	cursor: pointer;
+	width: 50px;
+	height: auto;
+	display: inline-block;
+
+}
+
+
+
+/*menu button construction*/
+#current{
+	color:white;
+ 	background-color: black;
+}
+
+.link{
+	position: absolute;
+	z-index: 6;
+}
+
+.link ul {
+ 	padding: 0;
+ 	margin-left: 20%;
+ 	margin-right: 50%;
+ 	margin-top: 150px;
+
+}
+.link ul li {
+ 	display: inline-block;
+ 	list-style-type: none;
+ 	margin:0%;
+ 	padding: 5px 3%;
+}
+
+.link ul li a {
+	color: black;
+ 	text-decoration: none;
+ 	font-size: 3.5em;
+ 	font-weight: 700;
+ 	font-family: 'Raleway', sans-serif;
+}
+
+.link ul li a:hover {
+ 	color:black;
+ 	text-decoration: none;
+ 	background-color: white;
+
+}
+#closemenu{
+	list-style-type: none;
+	text-decoration: none;
+	margin-left: 57%;
+ 	margin-top: 55px;
+	position: absolute;
+	z-index: 6;
+	color: white;
+ 	font-size: 3.5em;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	cursor: pointer;
+}
+
+#rightarrow{
+	list-style-type: none;
+	text-decoration: none;
+	margin-left: 70%;
+ 	margin-top: 30%;
+	position: absolute;
+	z-index: 6;
+	color: red;
+ 	font-size: 5em;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	cursor: pointer;
+	
+}
+#leftarrow{
+	list-style-type: none;
+	text-decoration: none;
+	margin-left: 25%;
+ 	margin-top: 30%;
+	position: absolute;
+	z-index: 6;
+	color: red;
+ 	font-size: 5em;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	cursor: pointer;
+	
+}
+
+#backmenu{
+	position: relative;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: -2;
+}
+
+
+
+
+
+
+
+/*Changes for responsie from 600-1440px*/
+@media screen and (min-width: 1440px) and (max-width: 2990px) 
+{
+	#backindex{
+		width: 100%;
+		height: auto;
+		margin-right: 0%;
+}
+
+	#backcontact{
+		width: 100%;
+		height: auto;
+}
+	#backmenu{
+		width: 100%;
+		height: auto;
+		margin-right: 0%;
+	}
+
+}
+
+/*Changes for responsie from 600-1440px*/
+@media screen and (min-width: 600px) and (max-width: 1440px) 
+{
+	#backindex{
+		width: 100%;
+		height: auto;
+}
+
+	#backcontact{
+		width: 100%;
+		height: auto;
+}
+	.language{
+	margin-top: 3%;
+	margin-left: 90%;
+}
+	#backmenu{
+		width: 100%;
+		height: auto;
+
+}
+
+/*Changes for responsie from 150-600px*/
+@media screen and (min-width: 150px) and (max-width: 600px) 
+{
+	#backindex{
+		width: 100%;
+		height: auto;
+}
+	#backcontact{
+		width: 100%;
+		height: auto;
+}
+	.language{
+	margin-top: 3%;
+	margin-left: 85%;
+}
+	#backmenu{
+		width: 100%;
+		height: auto;
+}
