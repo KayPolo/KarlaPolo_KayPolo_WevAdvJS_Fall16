@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NFH, NFT</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!-- style -->
+	<link rel="stylesheet" href="assets/css/normalize.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+<body>
+	<div class="siteContent">
+
+		
+
+		<!-- menu -->	
+		<div class="menu page">
+		<!-- <div class="tback page"></div> -->
+				<div class="overlay"></div>
+				<nav class="link">
+					<ul>
+  						<button><li class="menuvar" id="home">home</li></button>
+			  			<button><li class="menuvar" id="project">the project</li></button>
+			  			<button><li class="menuvar" id="exhibition">exhibition</li></button>
+			  			<button><li class="menuvar" id="artist">artist</li></button>
+			  			<button><li class="menuvar" id="events">events</li></button>
+ 					</ul>
+				</nav>
+
+				<div >
+					<span class="close">×</span>
+				</div>
+
+
+				<div class="bigmenu">
+					<img id="backmenu" src="assets/images/backmenu.jpg">
+				</div>
+		</div>
+
+
+		<!-- the project page -->
+		<div class="project page">
+			<div class="language">
+				<img id="english" src="assets/images/englishbutton.png">
+				<img id="spanish" src="assets/images/spanishbutton.png">
+			</div>
+
+			<div id="menuIconPro">
+				<img id= "newmenu" src="assets/images/menubutton.png"/>
+			</div>
+
+			<div class="text-container" id="text-project">
+				<p >Whenever possible use archival materials in making and presenting your artwork. Common materials such as paper, cardboard and tape contain acid that will cause gradual yellowing, fading and deterioration. By using neutral-PH materials, you can help preserve your art for future generations of art lovers to collect and enjoy.</p>
+				<p>Whenever possible use archival materials in making and presenting your artwork. Common materials such as paper, cardboard and tape contain acid that will cause gradual yellowing, fading and deterioration. By using neutral-PH materials, you can help preserve your art for future generations of art lovers to collect and enjoy.</p>
+			</div>
+
+			<div class="backgroundproj">
+				<img id= "backproj" src="assets/images/project.png"/>
+			</div>
+
+		</div>
+
+
+		<!-- exhibition page -->
+		<div class="exhibition page">
+			<div class="language">
+				<img id="english" src="assets/images/englishbutton.png">
+				<img id="spanish" src="assets/images/spanishbutton.png">
+			</div>
+
+			<div id="menuIconEx">
+				<img id= "newmenu" src="assets/images/menubutton.png"/>
+			</div>
+
+			<div class="pieces-list">
+				<div id="pieces-template">
+					<img class="piece-image" class="img1" src="assets/images/dany1.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img2" src="assets/images/hector1.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img3" src="assets/images/pedro1.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img4" src="assets/images/diana1.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img5" src="assets/images/yeniel1.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img6" src="assets/images/adrian1.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img7" src="assets/images/dani2.jpg"/>
+				</div>
+				<div id="pieces-template">
+					<img class="piece-image" class="img8" src="assets/images/adrian2.jpg"/>
+				</div>
+			</div>
+
+
+			<!-- <ul class="pieces-list">
+				<script id="pieces-template" type="x-handlebars-template">​
+					{{#each this}}
+						<li data-index="{{id}}">
+							<a href="#" class="piece-image"><img src="{{piece-image}}" height="272" alt="{{name}}"/></a>
+							<h2><a href="#"> {{name}} </a><br/></h2>
+							<h3>{{piece.title}}</h3>
+							<ul class="piece-description">
+								<li><span>Author: </span>{{project.author}}</li>
+							</ul>
+						</li>
+					{{/each}}
+				</script> 
+			</ul> -->
+
+			
+			<div class="filter">
+					<form>
+						<span id="artist-label">Artist:</span>
+						<label><input class="names" id="dany" type="checkbox" name="author" value="danyperez"> Dany Perez </label>
+						<label><input class="names" id="pedro" type="checkbox" name="author" value="pedrocamejo"> Pedro Camejo </label>
+						<label><input class="names" id="yeniel" type="checkbox" name="author" value="yenielyoder"> Yeniel Yoder </label>
+						<label><input class="names" id="diana" type="checkbox" name="author" value="dianatur"> Diana Tur </label>
+						<label><input class="names" id="adrian" type="checkbox" name="author" value="adrianlabaut"> Adrian Labaut </label>
+						<label><input class="names" id="hector" type="checkbox" name="author" value="hectorcoto"> Hector Coto </label>
+						<button class="clear">Clear</button>
+				</form>
+			</div>
+
+			<div class="backgroundexpo">
+				<img id= "backexpo" src="assets/images/exhibition_back.png"/>
+
+			</div>
+
+		</div>
+
+		<!-- the artist page -->
+		<div class="artist page">
+			<div class="language">
+				<img id="english" src="assets/images/englishbutton.png">
+				<img id="spanish" src="assets/images/spanishbutton.png">
+			</div>
+
+			<div id="menuIconArt">
+				<img id= "newmenu" src="assets/images/menubutton.png"/>
+			</div>
+
+			<div class="artist-list">
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/dany-photo.jpg"/>
+					<span class="artist-names">Dany Perez</span>
+					<span class="counties">Cuba / New York, US</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/michel-photo.jpg"/>
+					<span class="artist-names">Michel Hernandez</span>
+					<span class="counties">Cuba / New Jersey, US</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/karla-photo.jpg"/>
+					<span class="artist-names">Karla Polo</span>
+					<span class="counties">Cuba / New Jersey, US</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/diana-photo.jpg"/>
+					<span class="artist-names">Diana Tur</span>
+					<span class="counties">Cuba / Florida, US</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/yeniel-photo.jpg"/>
+					<span class="artist-names">Yeniel Yoder</span>
+					<span class="counties">Cuba / Florida, US</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/hector-photo.jpg"/>
+					<span class="artist-names">Hector Coto</span>
+					<span class="counties">Cuba / New Jersey, US</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/pedro-photo.jpg"/>
+					<span class="artist-names">Pedro Camejo</span>
+					<span class="counties">Cuba / Lima, Peru</span>
+				</div>
+				<div id="artist-template">
+					<img class="artist-photo" src="assets/images/adrian-photo.jpg"/>
+					<span class="artist-names">Adrian Labaut</span>
+					<span class="counties">Cuba / Milano, Italy</span>
+				</div>
+			</div>
+
+			<div class="backgroundart">
+				<img id="backart" src="assets/images/artist.png">
+			</div>
+
+		</div>
+
+		<!-- the events page -->
+		<div class="events page">
+			<div class="language">
+				<img id="english" src="assets/images/englishbutton.png">
+				<img id="spanish" src="assets/images/spanishbutton.png">
+			</div>
+
+			<div id="menuIconEv">
+				<img id= "newmenu" src="assets/images/menubutton.png"/>
+			</div>
+
+			<div class="backgroundev">
+				<img id= "backeve" src="assets/images/events.png"/>
+			</div>
+
+		</div>
+		
+
+		<!-- landing page -->
+		<div class="landing page">
+			<div class="language">
+				<img id="english" src="assets/images/englishbutton.png">
+				<img id="spanish" src="assets/images/spanishbutton.png">
+			</div>
+
+			<div id="menuIcon">
+				<img id= "newmenu" src="assets/images/menubutton.png"/>
+			</div>
+
+			<div class="intro-text">
+				<p >All artwork should be presented in a simple, professional manner. Consider yourself a professional and treat your artwork with respect. Always use the best materials.</p>
+				<p>Whenever possible use archival materials in making and presenting your artwork. Common materials such as paper, cardboard and tape contain acid that will cause gradual yellowing, fading and deterioration. By using neutral-PH materials, you can help preserve your art for future generations of art lovers to collect and enjoy.</p>
+			</div>
+
+			<div class="backgroundindex">
+				<img id= "backindex" src="assets/images/intro.gif"/>
+				<img id= "backcontact" src="assets/images/backgroundContact.png"/>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery-min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

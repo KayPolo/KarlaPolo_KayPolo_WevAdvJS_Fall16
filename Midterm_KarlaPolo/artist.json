@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"name":"Dany Perez",
+		"photo":"../assets/images/danyphoto.jpg",
+		"piece-image":"../assets/images/dany1.jpg",
+		"piece":{
+			"title":"Sacrificios",
+			"author":"Dany Perez"
+		}
+
+	},
+
+	{
+		"id": 2,
+		"name":"Hector Coto",
+		"photo":"../assets/images/hectorphoto.jpg",
+		"piece-image":"../assets/images/hector1.jpg",
+		"piece":{
+			"title":"Aunque pobre...",
+			"author":"Hector Coto"
+		}
+		
+	},
+
+	{
+		"id": 3,
+		"name":"Pedro Camejo",
+		"photo":"../assets/images/pedrophoto.jpg",
+		"piece-image":"../assets/images/pedro1.jpg",
+		"piece":{
+			"title":"Marti",
+			"author":"Pedro Camejo"
+		}
+		
+	},
+
+	{
+		"id": 4,
+		"name":"Diana Tur",
+		"photo":"../assets/images/dianaphoto.jpg",
+		"piece-image":"../assets/images/diana1.jpg",
+		"piece":{
+			"title":"The floating island",
+			"author":"Diana Tur"
+		}
+		
+	},
+	{
+		"id": 5,
+		"name":"Yeniel Yoder",
+		"photo":"../assets/images/yenielphoto.jpg",
+		"piece-image":"../assets/images/yeniel1.jpg",
+		"piece":{
+			"title":"Cuba",
+			"author":"Yeniel Yoder"
+		}
+
+	},
+
+	{
+		"id": 6,
+		"name":"Adrian Labaut",
+		"photo":"../assets/images/adrianphoto.jpg",
+		"piece-image":"../assets/images/adrian1.jpg",
+		"piece":{
+			"title":"Melancolia",
+			"author":"Adrian Labaut"
+		}
+		
+	},
+
+	{
+		"id": 7,
+		"name":"Dany Perez",
+		"photo":"../assets/images/danyphoto.jpg",
+		"piece-image":"../assets/images/dani2.jpg",
+		"piece":{
+			"title":"Dreams",
+			"author":"Dany Perez"
+		}
+		
+	},
+
+	{
+		"id": 8,
+		"name":"Adrian Labaut",
+		"photo":"../assets/images/adrianphoto.jpg",
+		"piece-image":"../assets/images/adrian2.jpg",
+		"piece":{
+			"title":"Cenotafio Oustide all Places",
+			"author":"Adrian Labaut"
+		}
+		
+	}
+
+
+]

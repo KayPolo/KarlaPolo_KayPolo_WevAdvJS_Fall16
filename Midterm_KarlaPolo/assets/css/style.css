@@ -1,0 +1,484 @@
+*{
+	margin: 0;
+}
+
+body{
+	position: absolute;
+	
+}
+
+/*background settings index page*/
+
+#backindex{
+	position: relative;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: -10;
+	
+}
+
+/*contact background*/
+#backcontact{
+	position: relative;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: -11;
+}
+
+/*language buttons*/
+.language{
+	position: fixed;
+	float: right;
+	margin-top: 3%;
+	margin-left: 90%;
+	z-index: 299;
+}
+
+#english{
+	cursor: pointer;
+	width: 50px;
+	height: auto;
+	display: inline-block;
+	
+
+}
+
+#spanish{
+	cursor: pointer;
+	width: 50px;
+	height: auto;
+	display: inline-block;
+
+}
+
+#newmenu{
+	position: fixed;
+	float: left;
+	margin-top: 3%;
+	margin-left: 5%;
+	z-index: 300;
+	cursor: pointer;
+	width: 50px;
+	height: auto;
+	display: inline-block;
+
+}
+
+/*__________________________
+   
+ pages organization
+ __________________________*/
+
+/*Hide menu*/
+.menu{
+	opacity: 0;
+	transition: 0.6s;
+	pointer-events: none;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+	position: fixed;
+}
+
+.exhibition, .project, .artist, .events{
+	opacity: 0;
+	transition: 0.6s;
+	pointer-events: none;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+
+/*Show menu*/
+.menu.visible, .landing.visible, .exhibition.visible, .project.visible, .artist.visible, .events.visible {
+	opacity: 1;
+	transition: 1.4s;
+	display: block;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+	pointer-events: auto;
+}
+
+.landing{
+	opacity: 0;
+	transition: 1.4s;
+	pointer-events: none;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+
+
+/*__________________________
+   
+   menu page construction
+__________________________*/
+
+#current{
+	color:white;
+ 	background-color: black;
+}
+
+.link{
+	position: absolute;
+	z-index: 8;
+}
+
+.link ul {
+ 	padding-right: 50px;
+ 	margin-left: 25%;
+ 	margin-right: 39%;
+ 	margin-top: 100px;
+
+}
+.link ul button{
+	background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px 3%;
+    margin:0%;
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+ 	
+}
+
+.menuvar {
+	color: black;
+ 	text-decoration: none;
+ 	background-color: transparent;
+ 	font-size: 4.5em;
+ 	font-weight: bold;
+ 	font-family: sans-serif;
+}
+
+.menuvar:hover {
+ 	color:black;
+ 	text-decoration: none;
+ 	background-color: white;
+
+}
+
+.menuvar:link, .menu_var:visited{
+ 	color:white;
+ 	text-decoration: none;
+ 	background-color: black;
+}
+
+.close{
+	
+	position: absolute;
+	right: 3%;
+	top: 25px;
+	z-index: 6;
+	color: white;
+ 	font-size: 80px;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	cursor: pointer;
+ 	z-index: 10;
+}
+
+
+.bigmenu{
+	margin-left: 0;
+	width: 100%;
+	height: auto;
+	margin-top:0;
+	/*z-index: 5;*/
+}
+
+#rightarrow{
+	list-style-type: none;
+	text-decoration: none;
+	margin-left: 70%;
+ 	margin-top: 30%;
+	position: absolute;
+	z-index: 6;
+	color: red;
+ 	font-size: 5em;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	cursor: pointer;
+	
+}
+#leftarrow{
+	list-style-type: none;
+	text-decoration: none;
+	margin-left: 25%;
+ 	margin-top: 30%;
+	position: absolute;
+	z-index: 6;
+	color: red;
+ 	font-size: 5em;
+ 	font-weight: bold;
+ 	font-family: Arial, sans-serif;
+ 	cursor: pointer;
+	
+}
+
+#backmenu{
+	position: relative;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+#backeve{
+	position: fixed;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: 200;
+}
+
+#backproj{
+	position: fixed;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: 200;
+}
+
+.text-container{
+	position: fixed;
+	top: 15vh;
+	left: 35vw;
+	width: 450px;
+	height: auto;
+	margin: 0 auto;
+	z-index: 205;
+	font-size: 16pt;
+	font-family: courier;
+	text-align: center;
+
+
+}
+
+.intro-text{
+	position: absolute;
+	top: 1330px;
+	left: 50vw;
+	width: 600px;
+	height: auto;
+	margin: 0 auto;
+	z-index: 205;
+	font-size: 18pt;
+	font-family: courier;
+	text-align: left;
+	padding-top: 10px;
+
+
+}
+
+/*__________________________
+   
+	artist page style
+ __________________________*/
+
+#backart{
+	position: fixed;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: 200;
+}
+
+.artist-list{
+	position: fixed;
+	top: 40px;
+	left: 15vw;
+	width: 1100px;
+	height: auto;
+	margin: 0 auto;
+	z-index: 202;
+}
+
+
+#artist-template{
+	width: 206px;
+	height: auto;
+	margin: 20px;
+	display: inline-block;
+	position: relative;
+
+}
+
+.artist-photo{
+	width: auto;
+	height: 260px;
+	background-color: red;
+	margin bottom: 15px;
+	margin-right: 15px;
+	display: inline-block;
+}
+
+.artist-names{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+	color: dimgray;
+	display: block;
+}
+.counties{
+	font-family: Arial;
+	font-size: 16px;
+	color: dimgray;
+}
+/*__________________________
+   
+	exhibition page style
+ __________________________*/
+
+#backexpo{
+	position: fixed;
+	max-width: 100% auto;
+	height: auto;
+	margin: 0 auto;
+	z-index: 200;
+}
+
+
+.pieces-list{
+	position: fixed;
+	top: 20px;
+	left: 20vw;
+	width: 925px;
+	height: auto;
+	margin: 0 auto;
+	z-index: 202;
+}
+
+.img1, .img2, .img3, .img4,
+.img5, .img6, .img7, .img8{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.img1.hidden, .img2.hidden, .img3.hidden, .img4.hidden,
+.img5.hidden, .img6.hidden, .img7.hidden, .img8.hidden{
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+
+#pieces-template{
+	width: 194px;
+	height: auto;
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+
+}
+
+.piece-image{
+	width: auto;
+	height: 272px;
+	background-color: red;
+	margin bottom: 10px;
+	margin-right: 15px;
+	display: inline-block;
+
+}
+
+
+.filter{
+	position: fixed;
+	top: 680px;
+	left: 20vw;
+	z-index: 201;
+}
+
+#artist-label{
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+	margin-right: 5px;
+	font-size: 16pt;
+}
+.names{
+	margin-left: 5px;
+	text-align: center;
+}
+.clear{
+	list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+}
+
+
+
+/*Changes for responsie from 600-1440px*/
+@media screen and (min-width: 1440px) and (max-width: 2990px) 
+{
+	#backindex{
+		width: 100%;
+		height: auto;
+		margin-right: 0%;
+}
+
+	#backcontact{
+		width: 100%;
+		height: auto;
+}
+	#backmenu{
+		width: 100%;
+		height: auto;
+		margin-right: 0%;
+	}
+
+}
+
+/*Changes for responsie from 600-1440px*/
+@media screen and (min-width: 600px) and (max-width: 1440px) 
+{
+	#backindex{
+		width: 100%;
+		height: auto;
+}
+
+	#backcontact{
+		width: 100%;
+		height: auto;
+}
+	.language{
+	margin-top: 3%;
+	margin-left: 90%;
+}
+	#backmenu{
+		width: 100%;
+		height: auto;
+
+}
+
+/*Changes for responsie from 150-600px*/
+@media screen and (min-width: 150px) and (max-width: 600px) 
+{
+	#backindex{
+		width: 100%;
+		height: auto;
+}
+	#backcontact{
+		width: 100%;
+		height: auto;
+}
+	.language{
+	margin-top: 3%;
+	margin-left: 85%;
+}
+	#backmenu{
+		width: 100%;
+		height: 100vh;
+}
