@@ -69,7 +69,18 @@ app.main = (function() {
 			var page = $('.menu');
 			page.removeClass('visible');
 		});
-
+		$('.close1').click(function (e) {
+			e.preventDefault();
+			window.location.hash = '#exhibition';
+			var page = $('.gallery-page');
+			page.removeClass('visible');
+			
+		});
+		// For 'Gallery' button
+		$('.pieces-list').click(function (e) {
+			e.preventDefault();
+			window.location.hash = '#s1';
+		});
 
 	}
 
@@ -108,6 +119,36 @@ app.main = (function() {
 			
 			'#exhibition': function() {
 				renderExhibitionPage(pieces);
+			},
+			'#s1': function() {
+				renderGalleryPage();
+			},
+			'#s2': function() {
+				renderGalleryPage();
+			},
+
+			'#s3': function() {
+				renderGalleryPage();
+			},
+
+			'#s4': function() {
+				renderGalleryPage();
+			},
+
+			'#s5': function() {
+				renderGalleryPage();
+			},
+
+			'#s6': function() {
+				renderGalleryPage();
+			},
+
+			'#s7': function() {
+				renderGalleryPage();
+			},
+
+			'#s8': function() {
+				renderGalleryPage();
 			},
 
 			'#artist': function() {
@@ -163,6 +204,16 @@ app.main = (function() {
 
 	function renderExhibitionPage(){
 		var page = $('.exhibition');
+		page.addClass('visible');
+
+		// $('#dany').click(function (e) {
+		// 	var dany = $('.img2');
+		// 	dany.addClass('hidden');
+		// });
+	}
+
+	function renderGalleryPage(){
+		var page = $('.gallery-page');
 		page.addClass('visible');
 
 		// $('#dany').click(function (e) {
